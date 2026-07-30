@@ -18,6 +18,19 @@
 
 html { scroll-behavior: smooth; }
 
+/* Fallback header heights; script.js replaces this with the measured value */
+:root { --nav-height: 3.7rem; }
+
+@media (max-width: 540px) {
+  :root { --nav-height: 6rem; }
+}
+
+/* Stop the sticky header covering a section title when jumping to it */
+section[id],
+footer[id] {
+  scroll-margin-top: calc(var(--nav-height) + 1.25rem);
+}
+
 body {
   font-family: 'Jost', 'Helvetica Neue', sans-serif;
   color: var(--ink);

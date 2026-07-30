@@ -16,6 +16,15 @@ if (GOOGLE_FORM_URL) {
   document.getElementById('form-placeholder').hidden = true;
 }
 
+// Keep the anchor scroll offset matched to the actual header height, which
+// changes when the nav wraps on narrow screens
+const nav = document.querySelector('.nav');
+const setNavHeight = () => {
+  document.documentElement.style.setProperty('--nav-height', nav.offsetHeight + 'px');
+};
+setNavHeight();
+window.addEventListener('resize', setNavHeight);
+
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
