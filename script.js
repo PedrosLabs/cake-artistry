@@ -19,17 +19,32 @@ if (GOOGLE_FORM_URL) {
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Simple lightbox: clicking a gallery item shows a larger version
+// Simple lightbox: clicking a gallery item shows a larger version with its name
 const lightbox = document.getElementById('lightbox');
 const lightboxContent = lightbox.querySelector('.lightbox-content');
+let lastFocused = null;
 
 document.querySelectorAll('.gallery-item').forEach((item) => {
   const open = () => {
     const media = item.querySelector('img, .ph');
+    const caption = item.querySelector('figcaption');
     lightboxContent.innerHTML = '';
-    lightboxContent.appendChild(media.cloneNode(true));
+
+    const shown = media.cloneNode(true);
+    shown.loading = 'eager';
+    lightboxContent.appendChild(shown);
+
+    if (caption) {
+      const label = document.createElement('p');
+      label.className = 'lightbox-caption';
+      label.textContent = caption.textContent.trim();
+      lightboxContent.appendChild(label);
+    }
+
+    lastFocused = item;
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
+    lightbox.querySelector('.lightbox-close').focus();
   };
   item.addEventListener('click', open);
   item.addEventListener('keydown', (e) => {
@@ -40,6 +55,7 @@ document.querySelectorAll('.gallery-item').forEach((item) => {
 const closeLightbox = () => {
   lightbox.hidden = true;
   document.body.style.overflow = '';
+  if (lastFocused) { lastFocused.focus(); lastFocused = null; }
 };
 
 lightbox.addEventListener('click', (e) => {
