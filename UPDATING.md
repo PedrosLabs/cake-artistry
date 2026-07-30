@@ -1,7 +1,11 @@
 # Updating the Cake Artistry website
 
-Live site: https://pedroslabs.github.io/cake-artistry/
+Live site: https://www.cakeartistrybyvictoria.com
 Repository: https://github.com/PedrosLabs/cake-artistry
+
+The domain is registered with Squarespace but the site is hosted on GitHub
+Pages. Victoria's email runs on Google Workspace — the MX records in the
+Squarespace DNS panel must never be changed, or her email stops working.
 
 ## Adding or changing gallery photos (the easy way)
 
