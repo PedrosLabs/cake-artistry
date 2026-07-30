@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Artistry by Victoria — Bespoke Celebration Cakes</title>
+  <meta name="description" content="Beautiful bespoke celebration cakes, handcrafted by Victoria. Weddings, birthdays and every special occasion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav-brand">
+      <span class="brand-script">Cake Artistry</span>
+      <span class="brand-sub">by Victoria</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#enquire" class="nav-cta">Enquire</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <h1 class="hero-title">
+      <img src="images/logo.png" alt="Cake Artistry by Victoria" class="hero-logo">
+    </h1>
+    <p class="hero-tagline">Bespoke celebration cakes, handcrafted with love for your special moments.</p>
+    <div class="hero-actions">
+      <a href="#enquire" class="btn btn-gold">Make an Enquiry</a>
+      <a href="#gallery" class="btn btn-outline">View the Gallery</a>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <h2 class="section-title"><span>About</span></h2>
+      <p>
+        Every cake tells a story. At <strong>Cake Artistry by Victoria</strong>, each celebration cake is
+        designed and baked from scratch — from elegant wedding tiers to playful birthday showstoppers.
+        Using the finest ingredients and hand-finished decoration, Victoria creates centrepieces that
+        taste every bit as wonderful as they look.
+      </p>
+      <div class="about-badges">
+        <div class="badge">
+          <span class="badge-icon">🎂</span>
+          <h3>Bespoke Design</h3>
+          <p>Every cake is unique, designed around your occasion and ideas.</p>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🌿</span>
+          <h3>Finest Ingredients</h3>
+          <p>Baked fresh with quality ingredients — never mass-produced.</p>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🌸</span>
+          <h3>Hand Finished</h3>
+          <p>Sugar flowers and delicate details, all crafted by hand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="gallery" id="gallery">
+    <h2 class="section-title"><span>Gallery</span></h2>
+    <p class="section-lead">A taste of recent creations. Tap any cake to take a closer look.</p>
+    <div class="gallery-grid">
+      <figure class="gallery-item" tabindex="0">
+        <img src="images/beautiful-flower-design.jpg" alt="Cake with a beautiful flower design" loading="lazy">
+        <figcaption>Beautiful Flower Design</figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
+        <img src="images/classic-vanilla-celebration-cake.jpg" alt="Classic vanilla celebration cake" loading="lazy">
+        <figcaption>Classic Vanilla Celebration Cake</figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
+        <img src="images/jellycat-celebration-cake.jpg" alt="Jellycat themed celebration cake" loading="lazy">
+        <figcaption>Jellycat Celebration Cake</figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
+        <img src="images/happy-birthday-biscoff-buttercream.jpg" alt="Happy birthday cake with Biscoff buttercream" loading="lazy">
+        <figcaption>Happy Birthday Biscoff Buttercream</figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
+        <img src="images/happy-birthday-chocolate-ganache.jpg" alt="Happy birthday cake with chocolate ganache" loading="lazy">
+        <figcaption>Happy Birthday Chocolate Ganache</figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
+        <img src="images/football-celebrations.jpg" alt="Football themed celebration cake" loading="lazy">
+        <figcaption>Football Celebrations</figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
+        <img src="images/special-occasions.jpg" alt="Special occasions cake" loading="lazy">
+        <figcaption>Special Occasions</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Enquiry form ===== -->
+  <section class="enquire" id="enquire">
+    <h2 class="section-title"><span>Make an Enquiry</span></h2>
+    <p class="section-lead">
+      Tell us about your celebration — the occasion, date, and any ideas you have —
+      and Victoria will be in touch.
+    </p>
+    <div class="form-wrap">
+      <!--
+        GOOGLE FORM: paste the form's embed URL into GOOGLE_FORM_URL at the top
+        of script.js. The form appears here automatically once it's set.
+      -->
+      <iframe class="gform" id="gform" title="Cake enquiry form" loading="lazy" hidden></iframe>
+      <div class="form-placeholder" id="form-placeholder">
+        <span class="form-placeholder-icon">✉️</span>
+        <p>Our online enquiry form is on its way!</p>
+        <p>In the meantime, email Victoria directly and she'll get right back to you.</p>
+        <a class="btn btn-gold" href="mailto:victoria@cakeartistrybyvictoria.com">Email Victoria</a>
+      </div>
+      <p class="form-fallback" id="form-fallback" hidden>
+        Form not loading?
+        <a href="#" id="form-link" target="_blank" rel="noopener">Open the enquiry form in a new tab</a>
+        or email <a href="mailto:victoria@cakeartistrybyvictoria.com">victoria@cakeartistrybyvictoria.com</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Footer / Contact ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <p class="footer-brand"><span class="brand-script">Cake Artistry</span> <span class="brand-sub">by Victoria</span></p>
+      <div class="footer-links">
+        <a href="mailto:victoria@cakeartistrybyvictoria.com" class="footer-link">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+          victoria@cakeartistrybyvictoria.com
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61590315071407" target="_blank" rel="noopener" class="footer-link">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+          Find us on Facebook
+        </a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Cake Artistry by Victoria. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Lightbox for gallery ===== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
