@@ -18,8 +18,12 @@
 <body>
 
   <!-- ===== Navigation ===== -->
-  <header class="nav" id="top">
-    <a href="#top" class="nav-brand">
+  <!-- Anchor for the "back to top" brand link. It sits outside the sticky
+       header, which the browser treats as always in view. -->
+  <span id="top"></span>
+
+  <header class="nav">
+    <a href="#top" class="nav-brand" aria-label="Back to top">
       <span class="brand-script">Cake Artistry</span>
       <span class="brand-sub">by Victoria</span>
     </a>
