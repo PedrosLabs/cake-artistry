@@ -288,6 +288,10 @@ body {
 .ph-5 { background: linear-gradient(135deg, var(--cream), #EFD9A7); }
 .ph-6 { background: linear-gradient(135deg, #EFD9A7, var(--blush)); }
 
+/* Nudge the square-crop window up for photos whose topper would
+   otherwise be cut off by a centred crop */
+.gallery-item img.crop-high { object-position: center 30%; }
+
 .gallery-item figcaption {
   padding: 0.8rem 1rem;
   font-weight: 400;
