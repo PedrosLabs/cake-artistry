@@ -29,6 +29,9 @@ at quality 82 (keeps the page fast). Each gallery tile in `index.html` is:
 </figure>
 ```
 
+The gallery runs newest first, so put a new tile at the **top** of the
+`gallery-grid` list, not the end.
+
 Then publish:
 
 ```bash
