@@ -338,6 +338,34 @@ body {
 
 .flavour-card p { font-size: 0.92rem; }
 
+/* New flavours: a highlighted banner with the new cards beneath it */
+.flavours-new {
+  max-width: 46rem;
+  margin: 0 auto 2.8rem;
+  border: 1px solid rgba(194, 154, 59, 0.45);
+  border-radius: 1.2rem;
+  background: rgba(194, 154, 59, 0.1);
+  overflow: hidden;
+}
+
+.flavours-new-banner {
+  margin: 0;
+  padding: 0.8rem 1rem;
+  background: var(--olive-deep);
+  color: var(--cream-soft);
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+.flavour-grid-new {
+  max-width: none;
+  margin: 0;
+  padding: 1.4rem;
+}
+
 .flavours-footnote {
   text-align: center;
   max-width: 42rem;
@@ -584,5 +612,6 @@ body {
   .nav { flex-direction: column; gap: 0.5rem; }
   .nav-links { gap: 0.5rem 1rem; }
   .nav-links a { font-size: 0.78rem; }
+  .flavour-grid-new { padding: 1rem; grid-template-columns: 1fr; }
   .gform { height: 1100px; }
 }
