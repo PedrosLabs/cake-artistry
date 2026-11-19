@@ -607,6 +607,40 @@ body {
   line-height: 1;
 }
 
+/* ===== Seasonal snow (Christmas) — see snow.js ===== */
+.snow-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 40;           /* over the page, under the header (50) and photo viewer (100) */
+  pointer-events: none;  /* never gets in the way of clicks or taps */
+}
+
+.snow-canvas[hidden] { display: none; }
+
+.snow-toggle {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 45;
+  font: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--olive);
+  background: var(--white);
+  color: var(--olive-deep);
+  box-shadow: 0 2px 10px rgba(58, 58, 52, 0.12);
+  cursor: pointer;
+}
+
+.snow-toggle[aria-pressed="true"] { background: var(--olive); color: var(--white); }
+.snow-toggle:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 2px; }
+.snow-toggle[hidden] { display: none; }
+
 /* ===== Small screens ===== */
 @media (max-width: 540px) {
   .nav { flex-direction: column; gap: 0.5rem; }
