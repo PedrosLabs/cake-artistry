@@ -162,11 +162,18 @@ body {
 
 .hero-title { margin: 0; }
 
-.hero-logo {
+/* The wrapper matches the logo's size, so decorations can be placed by percentage */
+.hero-logo-wrap {
+  display: block;
+  position: relative;
   width: min(88vw, 520px);
+  margin: 0 auto;
+}
+
+.hero-logo {
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
 }
 
 .hero-tagline {
@@ -640,6 +647,17 @@ body {
 .snow-toggle[aria-pressed="true"] { background: var(--olive); color: var(--white); }
 .snow-toggle:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 2px; }
 .snow-toggle[hidden] { display: none; }
+
+/* ===== Christmas holly on the logo — see festive.js ===== */
+.hero-holly {
+  position: absolute;
+  left: 3.5%;
+  top: 3%;
+  width: 23%;
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 3px rgba(60, 50, 20, 0.18));
+}
 
 /* ===== Small screens ===== */
 @media (max-width: 540px) {

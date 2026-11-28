@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-115 -115 230 230" width="230" height="230">
+  <defs>
+    <linearGradient id="leafA" x1="0" y1="-1" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a9448"/><stop offset="0.55" stop-color="#4f6b2c"/><stop offset="1" stop-color="#37501f"/>
+    </linearGradient>
+    <linearGradient id="leafB" x1="0" y1="1" x2="1" y2="-1">
+      <stop offset="0" stop-color="#8aa354"/><stop offset="0.5" stop-color="#5c7833"/><stop offset="1" stop-color="#415a24"/>
+    </linearGradient>
+    <radialGradient id="berry" cx="0.36" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#f08a7a"/><stop offset="0.35" stop-color="#cf3b36"/><stop offset="1" stop-color="#8c1c22"/>
+    </radialGradient>
+    <g id="veins" fill="none" stroke="#d8bd6a" stroke-linecap="round">
+      <path d="M4 0 Q50 -3 96 0" stroke-width="2.2"/>
+      <path d="M28 -1 Q36 -9 42 -22 M52 -2 Q62 -8 71 -18 M28 1 Q36 9 42 22 M52 0 Q62 8 71 18" stroke-width="1.1" opacity="0.75"/>
+    </g>
+    <path id="leaf" stroke="#c9a94f" stroke-width="1.4" stroke-linejoin="round"
+      d="M0 0 Q6 -6 14 -24 Q24 -11 44 -33 Q52 -13 76 -27 Q78 -8 104 0 Q78 8 76 27 Q52 13 44 33 Q24 11 14 24 Q6 6 0 0 Z"/>
+  </defs>
+  <g transform="rotate(-38) translate(4 0)"><use href="#leaf" fill="url(#leafA)"/><use href="#veins"/></g>
+  <g transform="rotate(142) translate(4 0)"><use href="#leaf" fill="url(#leafB)"/><use href="#veins"/></g>
+  <g transform="rotate(-122) translate(4 0) scale(0.86)"><use href="#leaf" fill="url(#leafA)"/><use href="#veins"/></g>
+  <circle cx="-9" cy="2" r="14" fill="url(#berry)"/>
+  <circle cx="14" cy="-5" r="13" fill="url(#berry)"/>
+  <circle cx="7" cy="17" r="13.5" fill="url(#berry)"/>
+  <g fill="#fff" opacity="0.8"><circle cx="-13" cy="-3" r="2.6"/><circle cx="10" cy="-10" r="2.4"/><circle cx="3" cy="12" r="2.5"/></g>
+</svg>
